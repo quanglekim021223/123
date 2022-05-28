@@ -1,0 +1,1 @@
+ int getX() { return x; } }; int Test::x = 0; int main() { cout << Test::getX() << " "; Test t[5]; cout << Test::getX(); return 0; }
