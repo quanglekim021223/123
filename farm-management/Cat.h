@@ -4,7 +4,7 @@
 #include "Pet.h"
 class Cat : public Pet{
 	public:
-		Cat (string name, float weight, string color, int age) : Pet(name, weight, color, age){}
+			Cat (string name, float weight, string color, int age) : Pet(name, weight, color, age){}
 		void Meow(){
 			cout<<"Meow..Meow..Meow"<<endl;
 		}
