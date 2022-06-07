@@ -8,6 +8,13 @@ class Dog : public Pet{
 		void Gau(){
 			cout<<"Gau..Gau..Gau"<<endl;
 		}
+		bool Eat(string food){
+			if(food.compare("xuong")==0){
+				this->SetWeight(this->GetWeight()+ 0.15);
+				return true;
+			}
+			return false;	
+		}
 };
 
 #endif

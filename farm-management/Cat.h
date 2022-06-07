@@ -8,6 +8,13 @@ class Cat : public Pet{
 		void Meow(){
 			cout<<"Meow..Meow..Meow"<<endl;
 		}
+		bool Eat(string food){
+			if(food.compare("ca")==0){
+				this->SetWeight(this->GetWeight()+ 0.1);
+				return true;
+			}
+			return false;	
+		}
 };
 
 #endif

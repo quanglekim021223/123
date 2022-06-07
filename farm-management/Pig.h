@@ -8,6 +8,13 @@ class Pig : public Pet{
 		void Eo(){
 			cout<<"Eo..Eo..Eo"<<endl;
 		}
+		bool Eat(string food){
+			if(food.compare("cam")==0){
+				this->SetWeight(this->GetWeight()+ 0.2);
+				return true;
+			}
+			return false;	
+		}
 };
 
 #endif

@@ -45,9 +45,15 @@ class Pet{
 		int GetAge(){
 			return this->Age;
 		}
+		
+		
+		virtual bool Eat(string food) = 0;
+		
 		void ShowMe(){
 			cout<<"Name: "<<this->Name<<" - Weight: "<<this->Weight<<" - Color: "<<this->Color<<" - Age: "<<this->Age<<endl;
 		}
+		
+		
 };
 
 #endif
